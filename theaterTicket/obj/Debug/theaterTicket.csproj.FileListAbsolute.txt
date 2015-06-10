@@ -10,3 +10,4 @@ c:\users\nika\documents\visual studio 2013\Projects\theaterTicket\theaterTicket\
 c:\users\nika\documents\visual studio 2013\Projects\theaterTicket\theaterTicket\obj\Debug\theaterTicket.pdb
 c:\users\nika\documents\visual studio 2013\Projects\theaterTicket\theaterTicket\obj\Debug\theaterTicket.registration.resources
 c:\users\nika\documents\visual studio 2013\Projects\theaterTicket\theaterTicket\obj\Debug\theaterTicket.authorization.resources
+c:\users\nika\documents\visual studio 2013\Projects\theaterTicket\theaterTicket\obj\Debug\theaterTicket.orderTicket.resources

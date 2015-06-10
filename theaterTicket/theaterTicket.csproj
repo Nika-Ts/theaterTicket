@@ -83,6 +83,9 @@
     <EmbeddedResource Include="authorization.resx">
       <DependentUpon>authorization.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="orderTicket.resx">
+      <DependentUpon>orderTicket.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="registration.resx">
       <DependentUpon>registration.cs</DependentUpon>
     </EmbeddedResource>

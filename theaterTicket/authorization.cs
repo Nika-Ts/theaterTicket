@@ -42,6 +42,7 @@ namespace theaterTicket
                         else
                         {
                             orderTicket window = new orderTicket();
+                            window.id = 1;
                             this.Close();
                             window.Show();
                         }
