@@ -42,7 +42,13 @@ namespace theaterTicket
                         else
                         {
                             orderTicket window = new orderTicket();
-                            window.id = 1;
+
+                            SqlCommand command2 = new SqlCommand();
+                            command.Connection = this.conn;
+                            command.CommandText = "select id from dbo.users where mail ='" + mail + "'";
+                            Object userMail = command.ExecuteScalar();
+
+                            window.id = userMail.ToString();
                             this.Close();
                             window.Show();
                         }
