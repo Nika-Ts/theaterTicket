@@ -91,6 +91,7 @@
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(100, 20);
             this.name.TabIndex = 5;
+            this.name.TextChanged += new System.EventHandler(this.name_TextChanged);
             // 
             // lastname
             // 

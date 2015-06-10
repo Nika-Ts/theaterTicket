@@ -57,7 +57,7 @@
             // 
             this.button2.Location = new System.Drawing.Point(70, 133);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(136, 39);
+            this.button2.Size = new System.Drawing.Size(136, 37);
             this.button2.TabIndex = 2;
             this.button2.Text = "ავტორიზაცია";
             this.button2.UseVisualStyleBackColor = true;
