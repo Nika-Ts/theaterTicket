@@ -17,6 +17,9 @@ namespace theaterTicket
         public admin()
         {
             InitializeComponent();
+
+            panel1.Hide();
+
             this.conn = connectDb.returnConn();
             SqlCommand command = new SqlCommand();
             command.Connection = this.conn;
@@ -45,7 +48,38 @@ namespace theaterTicket
                 String ticketName = read.GetValue(1).ToString();
                 this.gridView.Rows.Add(new object[] { name, lastname, ticketName, type, quantity, date });
             }
-            
+            this.conn.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (panel1.Visible) { panel1.Hide(); } else panel1.Show();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            String saxeli = this.textBox1.Text.ToString();
+            String fasi = this.textBox2.Text.ToString();
+            String date = this.dateTimePicker1.Value.ToString();
+
+            try
+            {
+                conn = connectDb.returnConn();
+                SqlCommand command = new SqlCommand(); 
+                command.Connection = conn;
+                command.CommandText = "insert into dbo.tickets(name, date, price) values(N'" + saxeli + "','" + date + "', '" + fasi + "')";
+                command.ExecuteNonQuery();
+                MessageBox.Show("სპექტაკლი წარმატებით დაემატა");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+            }
         }
     }
 }

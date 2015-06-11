@@ -1,7 +1,6 @@
 c:\users\nika\documents\visual studio 2013\Projects\theaterTicket\theaterTicket\bin\Debug\theaterTicket.exe.config
 c:\users\nika\documents\visual studio 2013\Projects\theaterTicket\theaterTicket\bin\Debug\theaterTicket.exe
 c:\users\nika\documents\visual studio 2013\Projects\theaterTicket\theaterTicket\bin\Debug\theaterTicket.pdb
-c:\users\nika\documents\visual studio 2013\Projects\theaterTicket\theaterTicket\obj\Debug\theaterTicket.csprojResolveAssemblyReference.cache
 c:\users\nika\documents\visual studio 2013\Projects\theaterTicket\theaterTicket\obj\Debug\theaterTicket.admin.resources
 c:\users\nika\documents\visual studio 2013\Projects\theaterTicket\theaterTicket\obj\Debug\theaterTicket.user.resources
 c:\users\nika\documents\visual studio 2013\Projects\theaterTicket\theaterTicket\obj\Debug\theaterTicket.Properties.Resources.resources
