@@ -35,6 +35,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.combo2 = new System.Windows.Forms.ComboBox();
             this.buy = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.balanceLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // combo
@@ -81,6 +84,7 @@
             // 
             // combo2
             // 
+            this.combo2.DisplayMember = "s";
             this.combo2.FormattingEnabled = true;
             this.combo2.Items.AddRange(new object[] {
             "ჩვეულებრივი",
@@ -101,11 +105,40 @@
             this.buy.UseVisualStyleBackColor = true;
             this.buy.Click += new System.EventHandler(this.buy_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(169, 191);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(40, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "ბალანსი";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(277, 191);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(30, 13);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "ლარი";
+            // 
+            // balanceLabel
+            // 
+            this.balanceLabel.AutoSize = true;
+            this.balanceLabel.Location = new System.Drawing.Point(225, 191);
+            this.balanceLabel.Name = "balanceLabel";
+            this.balanceLabel.Size = new System.Drawing.Size(0, 13);
+            this.balanceLabel.TabIndex = 9;
+            // 
             // orderTicket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(530, 395);
+            this.Controls.Add(this.balanceLabel);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.buy);
             this.Controls.Add(this.combo2);
             this.Controls.Add(this.label3);
@@ -130,5 +163,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox combo2;
         private System.Windows.Forms.Button buy;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label balanceLabel;
     }
 }

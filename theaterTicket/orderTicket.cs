@@ -27,13 +27,29 @@ namespace theaterTicket
             {
                 combo.Items.Add(data.GetValue(0).ToString() + "-" + data.GetValue(1).ToString() + " - " + data.GetValue(2).ToString() + "-" + data.GetValue(3).ToString() + "gel");
             }
+            //this.conn.Close();
+            //this.conn.Open();
+            //Object obj = this.id;
+            //SqlCommand command1 = new SqlCommand();
+            //command1.Connection = this.conn;
+            //command1.CommandText = "select money from dbo.users where id = " + this.id + "";
+            //Object obj =  command1.ExecuteScalar().ToString();
+
             this.conn.Close();
         }
 
         private void orderTicket_Load(object sender, EventArgs e)
         {
-
+            this.conn = connectDb.returnConn();
+            SqlCommand command1 = new SqlCommand();
+            command1.Connection = this.conn;
+            command1.CommandText = "select money from dbo.users where id = " + this.id + "";
+            this.balanceLabel.Text = command1.ExecuteScalar().ToString();
         }
+
+        
+
+        
 
         private void buy_Click(object sender, EventArgs e)
         {
@@ -58,7 +74,7 @@ namespace theaterTicket
             double money = Convert.ToDouble(command1.ExecuteScalar());
 
             String[] arr = speqtakli.Split('-');
-            double price = Convert.ToDouble(arr[3].Replace("gel", "0"));
+            double price = Convert.ToDouble(arr[3].Replace("gel", ""));
             if (type == 2) price = price + 10; //ფასს ემატება 10 ლარი VIP ბილეთის შემთხვევაში
             money = money - (price * raodenoba);
             DateTime dateTime = DateTime.Now;

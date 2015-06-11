@@ -38,5 +38,11 @@ namespace theaterTicket
             authorization window = new authorization();
             window.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            admin window = new admin();
+            window.Show();
+        }
     }
 }
